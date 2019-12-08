@@ -12,8 +12,9 @@ ext {
 
     libraries = [
             build                        : [
-                    androidGradle: 'com.android.tools.build:gradle:3.5.0',
-                    kotlinGradle : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}"
+                    androidGradle           : 'com.android.tools.build:gradle:3.5.0',
+                    kotlinGradle            : "org.jetbrains.kotlin:kotlin-gradle-plugin:${versions.kotlin}",
+                    navigationSafeArgsGradle: "androidx.navigation:navigation-safe-args-gradle-plugin:${versions.navigation}"
             ],
             androidxAppCompat            : 'androidx.appcompat:appcompat:1.1.0',
             androidxConstraintLayout     : 'androidx.constraintlayout:constraintlayout:2.0.0-beta2',

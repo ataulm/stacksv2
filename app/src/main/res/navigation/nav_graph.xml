@@ -9,6 +9,15 @@
         android:id="@+id/stackFragment"
         android:name="com.ataulm.stacks.StackFragment"
         android:label="fragment_stack"
-        tools:layout="@layout/fragment_stack" />
+        tools:layout="@layout/fragment_stack">
+        <action
+            android:id="@+id/action_stackFragment_self"
+            app:destination="@id/stackFragment" />
+        <argument
+            android:name="stackId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
 
 </navigation>
