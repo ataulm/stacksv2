@@ -1,12 +1,5 @@
 package com.ataulm.stacks
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
-class NavHostActivity : AppCompatActivity() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_my)
-    }
-}
+class NavHostActivity : AppCompatActivity(R.layout.activity_nav_host)
