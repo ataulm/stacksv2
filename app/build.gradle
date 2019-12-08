@@ -30,10 +30,13 @@ android {
 dependencies {
     implementation libraries.androidxAppCompat
     implementation libraries.androidxConstraintLayout
+    implementation libraries.androidxNavigationFragmentKtx
+    implementation libraries.androidxNavigationUiKtx
     implementation libraries.androidxRecyclerView
     implementation libraries.kotlinStdLib
     implementation libraries.materialDesignComponents
     implementation libraries.roomRuntime
 
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt libraries.roomCompiler
 }
