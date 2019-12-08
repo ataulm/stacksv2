@@ -1,0 +1,19 @@
+buildscript {
+    apply from: 'dependencies.gradle'
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath libraries.build.androidGradle
+        classpath libraries.build.kotlinGradle
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
