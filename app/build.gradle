@@ -41,6 +41,5 @@ dependencies {
     implementation libraries.materialDesignComponents
     implementation libraries.roomRuntime
 
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt libraries.roomCompiler
 }
