@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
 
 android {
     compileSdkVersion versions.androidSdk.compile
@@ -25,11 +26,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
     implementation libraries.androidxAppCompat
     implementation libraries.androidxConstraintLayout
+    implementation libraries.androidxNavigationFragmentKtx
+    implementation libraries.androidxNavigationUiKtx
     implementation libraries.androidxRecyclerView
     implementation libraries.kotlinStdLib
     implementation libraries.materialDesignComponents
